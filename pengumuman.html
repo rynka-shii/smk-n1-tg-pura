@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman - SMK Negeri 1 Tanjung Pura</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main.content-wrapper {
+            flex: 1;
+        }
+        header {
+            background-color: #0277BD;
+        }
+        .navbar {
+            background-color: #01579B;
+        }
+        footer {
+            background-color: #0277BD;
+        }
+        .nav-link.active {
+            font-weight: bold;
+            background-color: #0288D1;
+            border-radius: 5px;
+        }
+        .announcement-card {
+            border-left: 6px solid #0288D1;
+            transition: 0.2s;
+        }
+        .announcement-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .announcement-date {
+            font-size: 0.85rem;
+            color: gray;
+        }
+        .badge-category {
+            background-color: #0288D1;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- HEADER -->
+    <header class="text-white py-4">
+        <div class="container d-flex flex-column flex-md-row align-items-center">
+            <img src="logoSMKN1TGP.png" alt="Logo Sekolah" 
+                style="height: 60px; width: auto;" class="me-3">
+            <div>
+                <h1 class="mb-0">SMK Negeri 1 Tanjung Pura</h1>
+                <p class="mb-0" style="font-size: 0.9rem;">
+                    Jl. T. Amir Hamzah, RT.04/RW.04, Pekan Tj. Pura, Kabupaten Langkat, Sumatera Utara 20853
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAV MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="siswa.html">Siswa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sejarah.html">Sejarah Sekolah</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pengumuman.html">Pengumuman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+		    <li class="nav-item"><a class="nav-link" href="tentangwebsite.html">Tentang Website</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="content-wrapper container my-5">
+        <h3 class="text-primary mb-4 text-center">📢 Pengumuman Terbaru</h3>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card announcement-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Penerimaan Peserta Didik Baru (PPDB) 2025</h5>
+                        <p class="announcement-date">📅 3 Mei 2025 | <span class="badge badge-category">Akademik</span></p>
+                        <p>SMK Negeri 1 Tanjung Pura membuka pendaftaran PPDB Tahun Ajaran 2025/2026. Calon siswa dapat melakukan pendaftaran secara online maupun langsung ke sekolah.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card announcement-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ujian Akhir Semester Genap 2025</h5>
+                        <p class="announcement-date">📅 17 Juni 2025 | <span class="badge badge-category">Akademik</span></p>
+                        <p>Ujian Akhir Semester (UAS) Genap akan dilaksanakan mulai tanggal 17 Juni 2025. Diharapkan seluruh siswa mempersiapkan diri dengan baik.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Lihat Jadwal</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card announcement-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Workshop Desain Web untuk Siswa RPL</h5>
+                        <p class="announcement-date">📅 22 Juli 2025 | <span class="badge badge-category">Kegiatan</span></p>
+                        <p>Program keahlian RPL akan mengadakan workshop desain web dasar menggunakan HTML, CSS, dan Bootstrap. Peserta akan mendapatkan e-sertifikat.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Daftar Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card announcement-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Rapat Koordinasi Guru dan Tendik</h5>
+                        <p class="announcement-date">📅 28 Juli 2025 | <span class="badge badge-category">Internal</span></p>
+                        <p>Rapat koordinasi akan dilaksanakan di ruang guru utama. Agenda meliputi evaluasi pembelajaran semester genap dan perencanaan semester ganjil.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Lihat Agenda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-white text-center py-3 mt-4">
+        &copy; 2025 SMK Negeri 1 Tanjung Pura. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

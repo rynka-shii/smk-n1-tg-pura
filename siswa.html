@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Siswa - SMK Negeri 1 Tanjung Pura</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main.content-wrapper {
+            flex: 1;
+        }
+        header {
+            background-color: #0277BD;
+        }
+        .navbar {
+            background-color: #01579B;
+        }
+        footer {
+            background-color: #0277BD;
+        }
+        .nav-link.active {
+            font-weight: bold;
+            background-color: #0288D1;
+            border-radius: 5px;
+        }
+        .table thead {
+            background-color: #0288D1;
+            color: white;
+            cursor: pointer;
+        }
+        .table thead th:hover {
+            background-color: #0277bd;
+        }
+        .search-box {
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+        .badge {
+            font-size: 0.8rem;
+        }
+        th.sort-asc::after {
+            content: " 🔼";
+        }
+        th.sort-desc::after {
+            content: " 🔽";
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- HEADER -->
+    <header class="text-white py-4">
+        <div class="container d-flex flex-column flex-md-row align-items-center">
+            <img src="logoSMKN1TGP.png" alt="Logo Sekolah" 
+                style="height: 60px; width: auto;" class="me-3">
+            <div>
+                <h1 class="mb-0">SMK Negeri 1 Tanjung Pura</h1>
+                <p class="mb-0" style="font-size: 0.9rem;">
+                    Jl. T. Amir Hamzah, RT.04/RW.04, Pekan Tj. Pura, Kabupaten Langkat, Sumatera Utara 20853
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAV MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="siswa.html">Siswa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sejarah.html">Sejarah Sekolah</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pengumuman.html">Pengumuman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+		    <li class="nav-item"><a class="nav-link" href="tentangwebsite.html">Tentang Website</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="content-wrapper container my-5">
+        <h3 class="text-primary text-center mb-4">👩‍🎓 Data Siswa SMK Negeri 1 Tanjung Pura</h3>
+
+        <div class="d-flex justify-content-center">
+            <input type="text" id="searchInput" class="form-control search-box" placeholder="🔍 Cari nama siswa...">
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle text-center mt-3" id="studentTable">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th onclick="sortTable(1)">Nama Siswa</th>
+                        <th onclick="sortTable(2)">Kelas</th>
+                        <th onclick="sortTable(3)">Jurusan</th>
+                        <th onclick="sortTable(4)">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Andi Pratama</td><td>XII RPL 1</td><td>Rekayasa Perangkat Lunak</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>2</td><td>Rizky Ananda</td><td>XII AKL 1</td><td>Akuntansi Keuangan Lembaga</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>3</td><td>Dewi Anggraini</td><td>XII BDP 2</td><td>Bisnis Daring dan Pemasaran</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>4</td><td>Putri Aulia</td><td>XII TB 1</td><td>Tata Boga</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>5</td><td>Rahmad Hidayat</td><td>XII TKJ 1</td><td>Teknik Komputer dan Jaringan</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>6</td><td>Siti Marlina</td><td>XII TBs 1</td><td>Tata Busana</td><td><span class="badge bg-warning text-dark">Cuti</span></td></tr>
+                    <tr><td>7</td><td>Fajar Nugraha</td><td>XII MM 1</td><td>Multimedia</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>8</td><td>Nadia Safitri</td><td>XII AKL 2</td><td>Akuntansi Keuangan Lembaga</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>9</td><td>Ahmad Fauzan</td><td>XII RPL 2</td><td>Rekayasa Perangkat Lunak</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>10</td><td>Maya Sari</td><td>XII BDP 1</td><td>Bisnis Daring dan Pemasaran</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>11</td><td>Bayu Prasetyo</td><td>XII TKJ 2</td><td>Teknik Komputer dan Jaringan</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>12</td><td>Indah Ramadhani</td><td>XII TB 2</td><td>Tata Boga</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>13</td><td>Rina Amelia</td><td>XII MM 2</td><td>Multimedia</td><td><span class="badge bg-danger">Lulus</span></td></tr>
+                    <tr><td>14</td><td>Iqbal Saputra</td><td>XII RPL 3</td><td>Rekayasa Perangkat Lunak</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>15</td><td>Salsa Nabila</td><td>XII BDP 3</td><td>Bisnis Daring dan Pemasaran</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>16</td><td>Doni Wahyudi</td><td>XII AKL 3</td><td>Akuntansi Keuangan Lembaga</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>17</td><td>Lina Oktaviani</td><td>XII TBs 2</td><td>Tata Busana</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>18</td><td>Arif Rahman</td><td>XII TKJ 3</td><td>Teknik Komputer dan Jaringan</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>19</td><td>Della Amelia</td><td>XII MM 3</td><td>Multimedia</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>20</td><td>Yuda Kurniawan</td><td>XII RPL 4</td><td>Rekayasa Perangkat Lunak</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>21</td><td>Farah Khairani</td><td>XII BDP 4</td><td>Bisnis Daring dan Pemasaran</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>22</td><td>Rangga Dwi</td><td>XII TKJ 4</td><td>Teknik Komputer dan Jaringan</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>23</td><td>Sri Mulyani</td><td>XII TB 3</td><td>Tata Boga</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>24</td><td>Hendra Putra</td><td>XII AKL 4</td><td>Akuntansi Keuangan Lembaga</td><td><span class="badge bg-warning text-dark">Cuti</span></td></tr>
+                    <tr><td>25</td><td>Tiara Septiani</td><td>XII TBs 3</td><td>Tata Busana</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                    <tr><td>26</td><td>Dika Saputra</td><td>XII RPL 5</td><td>Rekayasa Perangkat Lunak</td><td><span class="badge bg-danger">Lulus</span></td></tr>
+                    <tr><td>27</td><td>Novi Rahmawati</td><td>XII MM 4</td><td>Multimedia</td><td><span class="badge bg-success">Aktif</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-white text-center py-3 mt-4">
+        &copy; 2025 SMK Negeri 1 Tanjung Pura. All rights reserved.
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        // Fitur pencarian
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('keyup', function() {
+            const filter = this.value.toLowerCase();
+            const rows = document.querySelectorAll('#studentTable tbody tr');
+            rows.forEach(row => {
+                const name = row.cells[1].textContent.toLowerCase();
+                row.style.display = name.includes(filter) ? '' : 'none';
+            });
+        });
+
+        // Fitur sort kolom
+        let sortDirection = true;
+        function sortTable(columnIndex) {
+            const table = document.getElementById("studentTable");
+            const rows = Array.from(table.rows).slice(1);
+            const header = table.querySelectorAll("th");
+
+            header.forEach(th => th.classList.remove("sort-asc", "sort-desc"));
+            const sorted = rows.sort((a, b) => {
+                const valA = a.cells[columnIndex].innerText.toLowerCase();
+                const valB = b.cells[columnIndex].innerText.toLowerCase();
+                if (valA < valB) return sortDirection ? -1 : 1;
+                if (valA > valB) return sortDirection ? 1 : -1;
+                return 0;
+            });
+
+            sortDirection = !sortDirection;
+            header[columnIndex].classList.add(sortDirection ? "sort-asc" : "sort-desc");
+
+            const tbody = table.tBodies[0];
+            tbody.innerHTML = "";
+            sorted.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

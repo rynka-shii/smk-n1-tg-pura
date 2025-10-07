@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Website - SMK Negeri 1 Tanjung Pura</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main.content-wrapper {
+            flex: 1;
+        }
+        header {
+            background-color: #0277BD;
+        }
+        .navbar {
+            background-color: #01579B;
+        }
+        footer {
+            background-color: #0277BD;
+        }
+        .nav-link.active {
+            font-weight: bold;
+            background-color: #0288D1;
+            border-radius: 5px;
+        }
+        .info-box {
+            background-color: #E3F2FD;
+            border-left: 5px solid #0288D1;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- HEADER -->
+    <header class="text-white py-4">
+        <div class="container d-flex flex-column flex-md-row align-items-center">
+            <img src="logoSMKN1TGP.png" alt="Logo Sekolah" 
+                style="height: 60px; width: auto;" class="me-3">
+            <div>
+                <h1 class="mb-0">SMK Negeri 1 Tanjung Pura</h1>
+                <p class="mb-0" style="font-size: 0.9rem;">
+                    Jl. T. Amir Hamzah, RT.04/RW.04, Pekan Tj. Pura, Kabupaten Langkat, Sumatera Utara 20853
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAV MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="siswa.html">Siswa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sejarah.html">Sejarah Sekolah</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pengumuman.html">Pengumuman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tentangwebsite.html">Tentang Website</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="content-wrapper container my-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h3 class="text-primary mb-3 text-center">Tentang Website Ini</h3>
+                <div class="info-box mb-4">
+                    <p><b>Website ini dibuat untuk tujuan pembelajaran dan uji coba desain web sekolah</b> menggunakan bahasa pemrograman HTML, CSS, dan framework Bootstrap.</p>
+                    <p>Seluruh konten yang ditampilkan, termasuk data siswa, pengumuman, dan tampilan halaman lainnya, bersifat simulasi. Website ini tidak berafiliasi dengan situs resmi SMK Negeri 1 Tanjung Pura dan tidak digunakan untuk keperluan administrasi maupun publikasi resmi.</p>
+                    <p>Proyek ini dirancang sebagai bagian dari proses belajar dalam memahami struktur halaman web statis, tata letak, dan integrasi antarhalaman. Dengan adanya website ini, diharapkan dapat menjadi media pembelajaran yang interaktif dan inspiratif bagi siswa dan pengembang pemula.</p>
+                </div>
+
+                <p class="text-center text-muted fst-italic">
+                    “Website ini bukan situs resmi SMK Negeri 1 Tanjung Pura.  
+                    Semua data dan isi bersifat fiktif untuk kepentingan edukasi.”
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-white text-center py-3 mt-4">
+        <p class="mb-1">&copy; 2025 SMK Negeri 1 Tanjung Pura. All rights reserved.</p>
+        <small class="text-light opacity-75">
+            Website ini dibuat untuk tujuan pembelajaran dan uji coba desain web sekolah.  
+            Seluruh konten bersifat simulasi dan tidak digunakan sebagai situs resmi SMK Negeri 1 Tanjung Pura.
+        </small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

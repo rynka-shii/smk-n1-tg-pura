@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Developer - Nila Sari</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main.content-wrapper {
+            flex: 1;
+        }
+        header {
+            background-color: #0277BD;
+        }
+        .navbar {
+            background-color: #01579B;
+        }
+        footer {
+            background-color: #0277BD;
+        }
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #0288D1;
+        }
+        .info-box {
+            background-color: #E3F2FD;
+            border-left: 5px solid #0288D1;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .skill-badge {
+            background-color: #0288D1;
+            color: white;
+            margin: 3px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+        .nav-link.active {
+            font-weight: bold;
+            background-color: #0288D1;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- HEADER -->
+    <header class="text-white py-4">
+        <div class="container d-flex flex-column flex-md-row align-items-center">
+            <img src="logoSMKN1TGP.png" alt="Logo Sekolah" 
+                style="height: 60px; width: auto;" class="me-3">
+            <div>
+                <h1 class="mb-0">SMK Negeri 1 Tanjung Pura</h1>
+                <p class="mb-0" style="font-size: 0.9rem;">
+                    Jl. T. Amir Hamzah, RT.04/RW.04, Pekan Tj. Pura, Kabupaten Langkat, Sumatera Utara 20853
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAV MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="siswa.html">Siswa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sejarah.html">Sejarah Sekolah</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pengumuman.html">Pengumuman</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">Tentang Kami</a></li>
+		    <li class="nav-item"><a class="nav-link" href="tentangwebsite.html">Tentang Website</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="content-wrapper container my-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <div class="text-center mb-4">
+                    <img src="fotoProfil.PNG" alt="Foto Nila Sari" class="profile-pic mb-3">
+                    <h3 class="text-primary mb-0">Nila Sari</h3>
+                    <p class="text-muted">Web Developer | Informatika | Data Admin</p>
+                </div>
+
+                <div class="info-box mb-4">
+                    <h5>📄 Profil Singkat</h5>
+                    <p>Lulusan <b>S1 Informatika Universitas Potensi Utama</b> dengan predikat <b>cumlaude (IPK 3.87)</b>. 
+                    Memiliki kemampuan komunikasi yang baik, pengalaman dalam pengelolaan data akademik PDDIKTI, serta minat besar pada dunia web development dan desain antarmuka.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>🎓 Pendidikan</h5>
+                        <ul>
+                            <li><b>S1 Informatika</b> — Universitas Potensi Utama, Medan (2019 - 2023)</li>
+                        </ul>
+
+                        <h5 class="mt-4">💼 Pengalaman Kerja</h5>
+                        <ul>
+                            <li><b>Admin PDDIKTI</b> — Universitas Potensi Utama (Mar 2024 - 5 Juli 2025)</li>
+                            <li><b>Karyawan</b> — Toko Ritel Marelan Raya (2019 - 2022)</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-9">
+                        <h5>🧠 Keahlian</h5>
+                        <div>
+                            <span class="skill-badge">HTML</span>
+                            <span class="skill-badge">CSS</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">PHP</span>
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">C++</span>
+			    <span class="skill-badge">Laravel</span>
+                            <span class="skill-badge">SQL Server</span>
+                            <span class="skill-badge">Photoshop</span>
+                            <span class="skill-badge">Microsoft Office</span>
+                        </div>
+
+                        <h5 class="mt-4">🏆 Pencapaian</h5>
+                        <ul>
+                            <li>100% pelaporan data PDDIKTI tepat waktu setiap semester</li>
+                            <li>Berkontribusi dalam proses akreditasi kampus</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4 text-center">
+                    <a href="https://web.facebook.com/" class="btn btn-primary me-2">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-white text-center py-3 mt-4">
+        &copy; 2025 SMK Negeri 1 Tanjung Pura. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
